@@ -3,12 +3,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
-
 var calc = require('../modules/calc.js');
-// var subtraction = require('./modules/subtraction.js');
-// var multiplication = require('modules/multiplication.js');
-// var division = require('modules/division.js');
-//
 
 app.listen(process.env.PORT || 3000, function(){
   console.log('server is listening on port 3000');
